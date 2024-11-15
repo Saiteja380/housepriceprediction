@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import pickle
 
 # Initialize Flask app
-app = Flask(__name__)
+app = Flask(_name_)
 
 # Load the model
 with open('model_pickle2', 'rb') as file:
@@ -28,10 +28,5 @@ def predict():
     # Render the HTML page with the prediction result
     return render_template("index.html", prediction=prediction[0])
 
-if __name__ == "__main__":
-    app.run(debug=True)
-
-    return render_template("index.html", prediction = prediction[0])
-
-if _name=="main_":
+if _name_ == "_main_":
     app.run(debug=True)
